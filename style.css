@@ -164,6 +164,7 @@
     border: 1px solid var(--line); border-radius: var(--radius);
     background: var(--surface); padding: 28px; align-items: center;
   }
+  .project-card + .project-card{ margin-top: 28px; }
   .project-visual{ position: relative; }
   .project-visual svg{ width: 100%; height: auto; display:block; border-radius: 2px; }
   .project-title{ font-size: 20px; margin-bottom: 8px; }
