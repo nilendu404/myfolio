@@ -208,6 +208,22 @@
   .tl-school{ color: var(--text-dim); font-size: 14px; }
   .tl-grade{ color: var(--text-faint); font-size: 13px; font-family: var(--font-mono); margin-top: 4px; }
 
+  /* ---------- CERTIFICATIONS ---------- */
+  .cert-card{
+    display:flex; gap: 32px; align-items: flex-start;
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--surface); padding: 28px;
+  }
+  .cert-badge{ flex-shrink: 0; width: 150px; display:flex; justify-content:center; }
+  .cert-title{ font-size: 19px; margin-bottom: 6px; }
+  .cert-issuer{ font-family: var(--font-mono); font-size: 12.5px; color: var(--teal); margin-bottom: 14px; }
+  .cert-desc{ color: var(--text-dim); font-size: 14px; margin-bottom: 20px; max-width: 56ch; }
+
+  @media (max-width: 560px){
+    .cert-card{ flex-direction: column; align-items: center; text-align: center; }
+    .cert-desc{ max-width: none; }
+  }
+
   /* ---------- CONTACT ---------- */
   .contact-grid{ display:grid; grid-template-columns: 1fr 1.2fr; gap: 48px; }
   .contact-links{ display:flex; flex-direction: column; gap: 14px; }
